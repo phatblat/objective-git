@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
   spec.version = "0.1"
   spec.summary = "Objective-C bindings to libgit2."
   spec.homepage = "https://github.com/libgit2/objective-git"
-  spec.license = "MIT",
+  spec.license = { :type => "MIT", :file => "LICENSE" }
   spec.authors = {
     "Tim Clem" => "timothy.clem@gmail.com",
     "Josh Abernathy" => "josh@github.com"
