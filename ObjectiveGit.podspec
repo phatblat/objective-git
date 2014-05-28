@@ -23,9 +23,7 @@ Pod::Spec.new do |spec|
   }
   spec.dependency "libgit2", "0.18.0beta0"
   spec.ios.xcconfig = {
-    "ALWAYS_SEARCH_USER_PATHS" => "YES",
-    "OTHER_LDFLAGS" => "-all_load",
-    "USER_HEADER_SEARCH_PATHS" => "$(inherited) $(BUILT_PRODUCTS_DIR)/usr/local/include ${PODS_ROOT}/#{spec.name}/External/libgit2/include"
+    "OTHER_LDFLAGS" => "-all_load"
   }
   spec.prefix_header_contents = "#define GTLog(fmt, ...) NSLog((@\"%s [Line %d] \" fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);",
   spec.description = "    Objective Git provides Objective-C bindings to the libgit2 linkable C Git library.\n    This library follows the rugged API as close as possible while trying to maintain a native objective-c feel.\n"
