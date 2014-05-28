@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   }
   spec.source = {
     :git => "https://github.com/libgit2/objective-git.git",
-    :tag => "0.1",
+    :tag => spec.version.to_s,
     :submodules => true
   }
   spec.source_files = "Classes/**/*.{h,m}",
