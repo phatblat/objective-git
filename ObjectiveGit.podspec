@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name          =  "ObjectiveGit"
-  s.version       =  "0.1"
+  s.version       =  "0.2"
   s.summary       =  "Objective-C bindings to libgit2."
   s.homepage      =  "https://github.com/libgit2/objective-git"
   s.license       =  { :type => "MIT", :file => "LICENSE" }
