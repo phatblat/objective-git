@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
     "OTHER_LDFLAGS" => "-all_load"
   }
 
-  s.dependency 'libgit2', '0.18.0beta0.1'
+  s.dependency 'libgit2', '0.19.0'
 
   s.prefix_header_contents = '#define GTLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);'
 
