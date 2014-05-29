@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage      =  "https://github.com/libgit2/objective-git"
   s.license       =  { :type => "MIT", :file => "LICENSE" }
   s.authors       =  { "Tim Clem" => "timothy.clem@gmail.com", "Josh Abernathy" => "josh@github.com" }
-  s.source        =  { :git => "https://github.com/libgit2/objective-git.git", :tag => s.version.to_s, :submodules => true }
+  s.source        =  { :git => "https://github.com/libgit2/objective-git.git", :tag => s.version.to_s, :submodules => false }
   s.source_files  =  'Classes/**/*.{h,m}'
   s.osx.libraries =  %w|ssl crypto z|
   s.ios.libraries =  %w|z|
