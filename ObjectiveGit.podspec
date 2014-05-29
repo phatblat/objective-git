@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
 
   s.ios.xcconfig = {
     "OTHER_CFLAGS" => "-v", # For debugging #include
+    "USE_HEADERMAP" => "NO",
     "OTHER_LDFLAGS" => "-all_load"
   }
 
