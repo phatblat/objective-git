@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name          = "ObjectiveGit"
-  s.version       = "0.3"
+  s.version       = "0.2.001"
   s.summary       = "Objective-C bindings to libgit2."
   s.description   = <<-DESC
     Objective Git provides Objective-C bindings to the libgit2 linkable C Git
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.source        = {
     :git => "https://github.com/libgit2/objective-git.git",
-    :tag => s.version.to_s,
+    :commit => "6c8f201",
     :submodules => false
   }
   s.source_files  = 'Classes/**/*.{h,m}'
