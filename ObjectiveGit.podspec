@@ -11,7 +11,8 @@ Pod::Spec.new do |s|
   s.license       = { :type => "MIT", :file => "LICENSE" }
   s.authors       = {
     "Tim Clem" => "timothy.clem@gmail.com",
-    "Josh Abernathy" => "josh@github.com"
+    "Josh Abernathy" => "josh@github.com",
+    "Ben Chatelain (spec)" => "benchatelain@gmail.com"
   }
 
   s.source        = {
