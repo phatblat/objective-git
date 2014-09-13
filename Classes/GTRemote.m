@@ -93,7 +93,7 @@ NSString * const GTRemoteRenameProblematicRefSpecs = @"GTRemoteRenameProblematic
 + (BOOL)isValidURLString:(NSString *)URLString {
 	NSParameterAssert(URLString != nil);
 
-	return git_remote_valid_url(URLString.UTF8String) == GIT_OK;
+	return git_remote_supported_url(URLString.UTF8String) == GIT_OK;
 }
 
 + (BOOL)isSupportedURLString:(NSString *)URLString {
