@@ -29,7 +29,6 @@ Pod::Spec.new do |s|
   s.requires_arc  = true
   s.ios.xcconfig  = {
     "OTHER_CFLAGS" => "-v", # For debugging #include
-    "USE_HEADERMAP" => "NO",
     "OTHER_LDFLAGS" => "-all_load"
   }
   s.prefix_header_contents = '#define GTLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);'
