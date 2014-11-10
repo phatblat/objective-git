@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.source        = {
     :git => "https://github.com/libgit2/objective-git.git",
-    :commit => "6c8f201",
+    :commit => "ec53c3e",
     :submodules => false
   }
   s.source_files  = 'Classes/**/*.{h,m}'
