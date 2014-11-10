@@ -21,12 +21,11 @@ Pod::Spec.new do |s|
 
   s.source        = {
     :git => "https://github.com/libgit2/objective-git.git",
-    :commit => "ec53c3e",
-    :submodules => false
+    :commit => "ec53c3e"
   }
-  s.source_files  = 'Classes/**/*.{h,m}'
+  s.source_files  = 'ObjectiveGit/**/*.{h,m}'
 
-  s.ios.deployment_target = '5.0'
+  s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.7'
   s.osx.libraries = %w|ssl crypto z|
   s.ios.libraries = %w|z|
