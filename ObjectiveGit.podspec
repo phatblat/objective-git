@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name          = "ObjectiveGit"
-  s.version       = "0.2.002"
+  s.version       = "0.2.004"
   s.summary       = "Objective-C bindings to libgit2."
   s.description   = <<-DESC
     Objective Git provides Objective-C bindings to the libgit2 linkable C Git
@@ -33,5 +33,5 @@ Pod::Spec.new do |s|
   }
   s.prefix_header_contents = '#define GTLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);'
 
-  s.dependency 'libgit2', '0.21.0-rc1'
+  s.dependency 'libgit2', '0.21.2'
 end
