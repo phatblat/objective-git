@@ -6,6 +6,10 @@ Pod::Spec.new do |s|
     Objective Git provides Objective-C bindings to the libgit2 linkable C Git
     library. This library follows the rugged API as close as possible while
     trying to maintain a native objective-c feel.
+
+    _This version of the Podspec is unstable. Experimenting with various options to get it to build correctly._
+  
+    Podspec maintained by Ben Chatelain <benchatelain@gmail.com>.
   DESC
   s.homepage      = "https://github.com/libgit2/objective-git"
   s.license       = { :type => "MIT", :file => "LICENSE" }
