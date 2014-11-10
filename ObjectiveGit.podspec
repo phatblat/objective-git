@@ -36,5 +36,5 @@ Pod::Spec.new do |s|
   }
   s.prefix_header_contents = '#define GTLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);'
 
-  s.dependency 'libgit2', '0.21.2'
+  s.dependency 'libgit2', '0.21.0'
 end
