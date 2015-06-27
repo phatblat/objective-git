@@ -1098,6 +1098,7 @@
 				79262F0F13C697BE00A4B1EA /* Copy git2 Headers */,
 				BEF7E4DF1A3A47450035BB8E /* Copy git2 Headers again */,
 				8DC2EF500486A6940098B216 /* Headers */,
+				F8C59B0D1B3E4030009DE553 /* Objective-Clean */,
 			);
 			buildRules = (
 			);
@@ -1241,6 +1242,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = script/update_libgit2_ios;
+		};
+		F8C59B0D1B3E4030009DE553 /* Objective-Clean */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Objective-Clean";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/script/objective_clean.sh\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
