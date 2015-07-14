@@ -24,8 +24,17 @@ function build_ssh2 ()
     cp -R "${ROOT_PATH}/External/libssh2" "${ROOT_PATH}/External/libssh2-ios/src/"
     pushd "${ROOT_PATH}/External/libssh2-ios/src/libssh2" > /dev/null
 
-    export CFLAGS="-arch ${ARCH} -pipe -no-cpp-precomp -isysroot ${SDKROOT} -miphoneos-version-min=${IPHONEOS_DEPLOYMENT_TARGET}"
-    export CPPFLAGS="-arch ${ARCH} -pipe -no-cpp-precomp -isysroot ${SDKROOT} -miphoneos-version-min=${IPHONEOS_DEPLOYMENT_TARGET}"
+    if [[ -n "${ENABLE_BITCODE}" ]]; then
+        # Simply "marks" where the bitcode would be in the binary enforces the new
+        # bitcode rules (akin to a normal build in Xcode)
+        #BITCODE="-fembed-bitcode-marker"
+
+        # Actually does the full-on bitcode generation (like an archive build in Xcode)
+        BITCODE="-fembed-bitcode"
+    fi
+
+    export CFLAGS="-arch ${ARCH} -pipe -no-cpp-precomp -isysroot ${SDKROOT} -miphoneos-version-min=${IPHONEOS_DEPLOYMENT_TARGET} ${BITCODE} "
+    export CPPFLAGS="${CFLAGS}"
 
     mkdir -p "${ROOT_PATH}/External/libssh2-ios/bin/${SDKNAME}-${ARCH}.sdk"
     LOG="${ROOT_PATH}/External/libssh2-ios/bin/${SDKNAME}-${ARCH}.sdk/build-libssh2.log"

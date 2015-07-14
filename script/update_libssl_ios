@@ -42,8 +42,17 @@ function build_ssl ()
     fi
     echo "$LOG"
 
+    if [[ -n "${ENABLE_BITCODE}" ]]; then
+        # Simply "marks" where the bitcode would be in the binary enforces the new
+        # bitcode rules (akin to a normal build in Xcode)
+        #BITCODE="-fembed-bitcode-marker"
+
+        # Actually does the full-on bitcode generation (like an archive build in Xcode)
+        BITCODE="-fembed-bitcode"
+    fi
+
     ./Configure ${HOST} ${CONFIG} --openssldir="/tmp/openssl-${ARCH}" >> "${LOG}" 2>&1
-    perl -i -pe "s|^CC= gcc|CC= ${CLANG} -miphoneos-version-min=${IPHONEOS_DEPLOYMENT_TARGET} -arch ${ARCH} |g" Makefile >> "${LOG}" 2>&1
+    perl -i -pe "s|^CC= gcc|CC= ${CLANG} -miphoneos-version-min=${IPHONEOS_DEPLOYMENT_TARGET} -arch ${ARCH} ${BITCODE} |g" Makefile >> "${LOG}" 2>&1
     perl -i -pe "s|^CFLAG= (.*)|CFLAG= -isysroot ${SDKROOT} \$1|g" Makefile >> "${LOG}" 2>&1
     make >> "${LOG}" 2>&1
 
