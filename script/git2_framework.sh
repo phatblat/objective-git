@@ -86,26 +86,37 @@ headers=(
 
 	# Other headers
 	cred_helpers.h
-	sys/commit.h
-	sys/config.h
-	sys/diff.h
-	sys/filter.h
-	sys/hashsig.h
-	sys/index.h
-	sys/mempack.h
-	sys/odb_backend.h
-	sys/openssl.h
-	sys/refdb_backend.h
-	sys/reflog.h
-	sys/refs.h
-	sys/repository.h
-	sys/stream.h
-	sys/transport.h
+	strarray.h
+	oidarray.h
 	trace.h
 )
 
 for header in "${headers[@]}"; do
 	cp -fv "${SRCROOT}/External/libgit2/include/git2/${header}" "Headers/"
+done
+
+# sys headers
+sys_headers=(
+	commit.h
+	config.h
+	diff.h
+	filter.h
+	hashsig.h
+	index.h
+	mempack.h
+	odb_backend.h
+	openssl.h
+	refdb_backend.h
+	reflog.h
+	refs.h
+	repository.h
+	stream.h
+	transport.h
+)
+
+mkdir -p "Headers/sys"
+for header in "${sys_headers[@]}"; do
+	cp -fv "${SRCROOT}/External/libgit2/include/git2/sys/${header}" "Headers/sys/"
 done
 
 # Remove the empty binary image Xcode created
