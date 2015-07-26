@@ -27,8 +27,86 @@ echo "FRAMEWORK_PATH: ${FRAMEWORK_PATH}"
 
 cd "${FRAMEWORK_PATH}"
 
-#cp -a "${SRCROOT}/External/libgit2/include/git2.h" "Headers/"
-cp -a "${SRCROOT}/External/libgit2/include/git2/" "Headers/"
+# Copy only the necessary libgit2 headers
+headers=(
+	# Headers from libit2/git2.h
+	annotated_commit.h
+	attr.h
+	blob.h
+	blame.h
+	branch.h
+	buffer.h
+	checkout.h
+	cherrypick.h
+	clone.h
+	commit.h
+	common.h
+	config.h
+	describe.h
+	diff.h
+	errors.h
+	filter.h
+	global.h
+	graph.h
+	ignore.h
+	index.h
+	indexer.h
+	merge.h
+	message.h
+	net.h
+	notes.h
+	object.h
+	odb.h
+	odb_backend.h
+	oid.h
+	pack.h
+	patch.h
+	pathspec.h
+	rebase.h
+	refdb.h
+	reflog.h
+	refs.h
+	refspec.h
+	remote.h
+	repository.h
+	reset.h
+	revert.h
+	revparse.h
+	revwalk.h
+	signature.h
+	stash.h
+	status.h
+	submodule.h
+	tag.h
+	transport.h
+	transaction.h
+	tree.h
+	types.h
+	version.h
+
+	# Other headers
+	cred_helpers.h
+	sys/commit.h
+	sys/config.h
+	sys/diff.h
+	sys/filter.h
+	sys/hashsig.h
+	sys/index.h
+	sys/mempack.h
+	sys/odb_backend.h
+	sys/openssl.h
+	sys/refdb_backend.h
+	sys/reflog.h
+	sys/refs.h
+	sys/repository.h
+	sys/stream.h
+	sys/transport.h
+	trace.h
+)
+
+for header in "${headers[@]}"; do
+	cp -fv "${SRCROOT}/External/libgit2/include/git2/${header}" "Headers/"
+done
 
 # Remove the empty binary image Xcode created
 #rm -fv "git2"
