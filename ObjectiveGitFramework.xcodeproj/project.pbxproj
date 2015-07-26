@@ -309,7 +309,7 @@
 		DD3D9513182A81E1004AF532 /* GTBlame.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3D9511182A81E1004AF532 /* GTBlame.m */; };
 		DD3D951C182AB25C004AF532 /* GTBlameHunk.h in Headers */ = {isa = PBXBuildFile; fileRef = DD3D951A182AB25C004AF532 /* GTBlameHunk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD3D951D182AB25C004AF532 /* GTBlameHunk.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3D951B182AB25C004AF532 /* GTBlameHunk.m */; };
-		F8550CDC1B6485F600716FFA /* git2.h in Headers */ = {isa = PBXBuildFile; fileRef = 79262F8A13C69B1600A4B1EA /* git2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8550CE11B654C7100716FFA /* git2.h in Headers */ = {isa = PBXBuildFile; fileRef = F8550CC91B647CFB00716FFA /* git2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F879D8311B4B788F002D5C07 /* Libgit2FeaturesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F879D82F1B4B77F4002D5C07 /* Libgit2FeaturesSpec.m */; };
 		F8E4A2911A170CA6006485A8 /* GTRemotePushSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E4A2901A170CA6006485A8 /* GTRemotePushSpec.m */; };
 /* End PBXBuildFile section */
@@ -1101,7 +1101,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8550CDC1B6485F600716FFA /* git2.h in Headers */,
+				F8550CE11B654C7100716FFA /* git2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
