@@ -116,8 +116,6 @@
 		88328128173D8A64006D7DCF /* GTTreeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88328127173D8A64006D7DCF /* GTTreeSpec.m */; };
 		883CD6AB1600EBC600F57354 /* GTRemote.h in Headers */ = {isa = PBXBuildFile; fileRef = 883CD6A91600EBC600F57354 /* GTRemote.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		883CD6AC1600EBC600F57354 /* GTRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CD6AA1600EBC600F57354 /* GTRemote.m */; };
-		884C8A3719FF4B4D0017E98D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 884C8A3619FF4B4D0017E98D /* libz.dylib */; };
-		884C8A3919FF4B6D0017E98D /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 884C8A3819FF4B6D0017E98D /* libiconv.dylib */; };
 		884C8A3A19FF4B890017E98D /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 306123AA17EA5261006591D4 /* EXTScope.m */; };
 		886E622A18AEBF75000611A0 /* GTFilterSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 886E622818AEBF75000611A0 /* GTFilterSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		886E622C18AEBF75000611A0 /* GTFilterSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 886E622918AEBF75000611A0 /* GTFilterSource.m */; };
@@ -288,9 +286,6 @@
 		D03B7C411756AB370034A610 /* GTSubmoduleSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D03B7C401756AB370034A610 /* GTSubmoduleSpec.m */; };
 		D040AF70177B9779001AD9EB /* GTOIDSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D040AF6F177B9779001AD9EB /* GTOIDSpec.m */; };
 		D040AF78177B9A9E001AD9EB /* GTSignatureSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D040AF77177B9A9E001AD9EB /* GTSignatureSpec.m */; };
-		D05FC5E219FAD039008C9348 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F2FD317C6A8F3003DFADE /* libcrypto.a */; };
-		D05FC5E319FAD03C008C9348 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F2FD417C6A8F3003DFADE /* libssl.a */; };
-		D05FC5E419FAD040008C9348 /* libssh2-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A502B8617D6892D00BAF4A5 /* libssh2-ios.a */; };
 		D06D9E011755D10000558C17 /* GTEnumeratorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D06D9E001755D10000558C17 /* GTEnumeratorSpec.m */; };
 		D0751CD918BE520400134314 /* GTFilterListSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D0751CD818BE520400134314 /* GTFilterListSpec.m */; };
 		D09C2E361755F16200065E36 /* GTSubmodule.h in Headers */ = {isa = PBXBuildFile; fileRef = D09C2E341755F16200065E36 /* GTSubmodule.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -309,6 +304,14 @@
 		DD3D9513182A81E1004AF532 /* GTBlame.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3D9511182A81E1004AF532 /* GTBlame.m */; };
 		DD3D951C182AB25C004AF532 /* GTBlameHunk.h in Headers */ = {isa = PBXBuildFile; fileRef = DD3D951A182AB25C004AF532 /* GTBlameHunk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD3D951D182AB25C004AF532 /* GTBlameHunk.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3D951B182AB25C004AF532 /* GTBlameHunk.m */; };
+		F83062611B69D871000C93CE /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 884C8A3819FF4B6D0017E98D /* libiconv.dylib */; };
+		F83062621B69D875000C93CE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 884C8A3619FF4B4D0017E98D /* libz.dylib */; };
+		F83062631B69D877000C93CE /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F2FD317C6A8F3003DFADE /* libcrypto.a */; };
+		F83062641B69D87B000C93CE /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F2FD417C6A8F3003DFADE /* libssl.a */; };
+		F83062651B69D87F000C93CE /* libssh2-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A502B8617D6892D00BAF4A5 /* libssh2-ios.a */; };
+		F83062661B69D8AF000C93CE /* git2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8550CC71B647CFB00716FFA /* git2.framework */; };
+		F83062681B69E1C5000C93CE /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83062671B69E1C5000C93CE /* CoreFoundation.framework */; };
+		F830626A1B69E2F6000C93CE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83062691B69E2F6000C93CE /* Security.framework */; };
 		F8550CE11B654C7100716FFA /* git2.h in Headers */ = {isa = PBXBuildFile; fileRef = F8550CC91B647CFB00716FFA /* git2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F879D8311B4B788F002D5C07 /* Libgit2FeaturesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F879D82F1B4B77F4002D5C07 /* Libgit2FeaturesSpec.m */; };
 		F8E4A2911A170CA6006485A8 /* GTRemotePushSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E4A2901A170CA6006485A8 /* GTRemotePushSpec.m */; };
@@ -580,6 +583,8 @@
 		DD3D951B182AB25C004AF532 /* GTBlameHunk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTBlameHunk.m; sourceTree = "<group>"; };
 		E46931A7172740D300F2077D /* update_libgit2 */ = {isa = PBXFileReference; lastKnownFileType = text; name = update_libgit2; path = script/update_libgit2; sourceTree = "<group>"; };
 		E46931A8172740D300F2077D /* update_libgit2_ios */ = {isa = PBXFileReference; lastKnownFileType = text; name = update_libgit2_ios; path = script/update_libgit2_ios; sourceTree = "<group>"; };
+		F83062671B69E1C5000C93CE /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		F83062691B69E2F6000C93CE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		F8550CC11B645E2600716FFA /* git2_framework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = git2_framework.sh; path = script/git2_framework.sh; sourceTree = SOURCE_ROOT; };
 		F8550CC71B647CFB00716FFA /* git2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = git2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8550CC91B647CFB00716FFA /* git2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = git2.h; sourceTree = "<group>"; };
@@ -614,11 +619,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				884C8A3919FF4B6D0017E98D /* libiconv.dylib in Frameworks */,
-				884C8A3719FF4B4D0017E98D /* libz.dylib in Frameworks */,
-				D05FC5E319FAD03C008C9348 /* libssl.a in Frameworks */,
-				D05FC5E219FAD039008C9348 /* libcrypto.a in Frameworks */,
-				D05FC5E419FAD040008C9348 /* libssh2-ios.a in Frameworks */,
+				F83062661B69D8AF000C93CE /* git2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +627,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F83062681B69E1C5000C93CE /* CoreFoundation.framework in Frameworks */,
+				F830626A1B69E2F6000C93CE /* Security.framework in Frameworks */,
+				F83062611B69D871000C93CE /* libiconv.dylib in Frameworks */,
+				F83062621B69D875000C93CE /* libz.dylib in Frameworks */,
+				F83062651B69D87F000C93CE /* libssh2-ios.a in Frameworks */,
+				F83062631B69D877000C93CE /* libcrypto.a in Frameworks */,
+				F83062641B69D87B000C93CE /* libssl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +654,8 @@
 		0867D691FE84028FC02AAC07 /* ObjectiveGitFramework */ = {
 			isa = PBXGroup;
 			children = (
+				F83062691B69E2F6000C93CE /* Security.framework */,
+				F83062671B69E1C5000C93CE /* CoreFoundation.framework */,
 				BDD8AB01130F01AB00CB5D40 /* README.md */,
 				887B948D1A3A38130070D41D /* ObjectiveGit.modulemap */,
 				BDE4C05E130EFE2C00851650 /* ObjectiveGit */,
@@ -1175,7 +1185,7 @@
 				F8550CDB1B6485CB00716FFA /* Sources */,
 				F8550CC31B647CFB00716FFA /* Frameworks */,
 				F8550CC41B647CFB00716FFA /* Headers */,
-				F8550CD81B647F1100716FFA /* ShellScript */,
+				F8550CD81B647F1100716FFA /* Assemble Framework */,
 			);
 			buildRules = (
 			);
@@ -1224,8 +1234,8 @@
 			targets = (
 				8DC2EF4F0486A6940098B216 /* ObjectiveGit-Mac */,
 				88F05A6A16011E5400B7AD1D /* ObjectiveGit-MacTests */,
-				D01B6ED219F82E2000D411BC /* ObjectiveGit-iOS */,
 				D0A330ED16027F1E00A616FA /* libgit2 */,
+				D01B6ED219F82E2000D411BC /* ObjectiveGit-iOS */,
 				F8550CC61B647CFB00716FFA /* git2-iOS */,
 				D0A330F216027F3600A616FA /* libgit2-iOS */,
 				6A3C609017D5963700382DFF /* libssh2-iOS */,
@@ -1306,13 +1316,14 @@
 			shellPath = /bin/sh;
 			shellScript = script/update_libgit2_ios;
 		};
-		F8550CD81B647F1100716FFA /* ShellScript */ = {
+		F8550CD81B647F1100716FFA /* Assemble Framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Assemble Framework";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1427,57 +1438,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D01B6F7419F82FB300D411BC /* GTDiffLine.m in Sources */,
-				D01B6F3C19F82F8700D411BC /* GTTreeBuilder.m in Sources */,
-				D01B6F4219F82F8700D411BC /* GTIndexEntry.m in Sources */,
-				D01B6F2E19F82F8700D411BC /* GTEnumerator.m in Sources */,
-				D01B6F4C19F82F8700D411BC /* GTConfiguration.m in Sources */,
-				D01B6F6619F82FA600D411BC /* GTRepository+Attributes.m in Sources */,
-				D019778A19F8307600F523DA /* ObjectiveGit.m in Sources */,
-				D01B6F3219F82F8700D411BC /* GTCommit.m in Sources */,
-				D01B6F3819F82F8700D411BC /* GTTree.m in Sources */,
-				D01B6F6C19F82FB300D411BC /* GTDiff.m in Sources */,
 				884C8A3A19FF4B890017E98D /* EXTScope.m in Sources */,
-				D01B6F4E19F82F8700D411BC /* GTRemote.m in Sources */,
-				D01B6F3019F82F8700D411BC /* GTObject.m in Sources */,
-				D01B6F4619F82F8700D411BC /* GTBranch.m in Sources */,
-				D01B6F3A19F82F8700D411BC /* GTTreeEntry.m in Sources */,
-				D01B6F2419F82F8700D411BC /* GTRepository+Reset.m in Sources */,
 				D01B6F5219F82FA600D411BC /* GTBlame.m in Sources */,
-				D01B6F5A19F82FA600D411BC /* GTOID.m in Sources */,
-				D01B6F2219F82F8700D411BC /* GTRepository+Status.m in Sources */,
-				D01B6F3419F82F8700D411BC /* GTSignature.m in Sources */,
-				D01B6F4419F82F8700D411BC /* GTReference.m in Sources */,
-				D01B6F6019F82FA600D411BC /* GTFilter.m in Sources */,
-				D01B6F1819F82F7B00D411BC /* NSError+Git.m in Sources */,
-				D01B6F2A19F82F8700D411BC /* GTRepository+Committing.m in Sources */,
-				D01B6F5019F82FA600D411BC /* GTRepository+Blame.m in Sources */,
-				D01B6F5C19F82FA600D411BC /* GTSubmodule.m in Sources */,
-				D01B6F4019F82F8700D411BC /* GTIndex.m in Sources */,
-				D01B6F7219F82FB300D411BC /* GTDiffDelta.m in Sources */,
-				D01B6F6419F82FA600D411BC /* GTFilterList.m in Sources */,
-				D01B6F2819F82F8700D411BC /* GTRepository+Stashing.m in Sources */,
-				D01B6F7619F82FB300D411BC /* GTDiffPatch.m in Sources */,
-				D01B6F3E19F82F8700D411BC /* GTTag.m in Sources */,
-				D01B6F1A19F82F7B00D411BC /* NSString+Git.m in Sources */,
-				D01B6F2619F82F8700D411BC /* GTStatusDelta.m in Sources */,
-				D01B6F2019F82F8700D411BC /* GTRepository.m in Sources */,
-				88B2131F1B20E785005CF2C5 /* GTRepository+References.m in Sources */,
-				D01B6F7019F82FB300D411BC /* GTDiffHunk.m in Sources */,
-				D01B6F4819F82F8700D411BC /* GTObjectDatabase.m in Sources */,
-				D01B6F2C19F82F8700D411BC /* GTRepository+RemoteOperations.m in Sources */,
 				D01B6F5419F82FA600D411BC /* GTBlameHunk.m in Sources */,
-				D01B6F6819F82FA600D411BC /* GTFetchHeadEntry.m in Sources */,
 				D01B6F3619F82F8700D411BC /* GTBlob.m in Sources */,
-				D01B6F6E19F82FB300D411BC /* GTDiffFile.m in Sources */,
-				D01B6F5619F82FA600D411BC /* GTReflog.m in Sources */,
+				D01B6F4619F82F8700D411BC /* GTBranch.m in Sources */,
+				D01B6F3219F82F8700D411BC /* GTCommit.m in Sources */,
+				D01B6F4C19F82F8700D411BC /* GTConfiguration.m in Sources */,
 				D01B6F5E19F82FA600D411BC /* GTCredential.m in Sources */,
+				D01B6F6C19F82FB300D411BC /* GTDiff.m in Sources */,
+				D01B6F6E19F82FB300D411BC /* GTDiffFile.m in Sources */,
+				D01B6F7219F82FB300D411BC /* GTDiffDelta.m in Sources */,
+				D01B6F7019F82FB300D411BC /* GTDiffHunk.m in Sources */,
+				D01B6F7419F82FB300D411BC /* GTDiffLine.m in Sources */,
+				D01B6F7619F82FB300D411BC /* GTDiffPatch.m in Sources */,
+				D01B6F2E19F82F8700D411BC /* GTEnumerator.m in Sources */,
 				D01B6F6219F82FA600D411BC /* GTFilterSource.m in Sources */,
+				D01B6F6419F82FA600D411BC /* GTFilterList.m in Sources */,
+				D01B6F6819F82FA600D411BC /* GTFetchHeadEntry.m in Sources */,
+				D01B6F6019F82FA600D411BC /* GTFilter.m in Sources */,
+				D01B6F4019F82F8700D411BC /* GTIndex.m in Sources */,
+				D01B6F4219F82F8700D411BC /* GTIndexEntry.m in Sources */,
+				D01B6F3019F82F8700D411BC /* GTObject.m in Sources */,
+				D01B6F4819F82F8700D411BC /* GTObjectDatabase.m in Sources */,
+				D01B6F4A19F82F8700D411BC /* GTOdbObject.m in Sources */,
+				D01B6F5A19F82FA600D411BC /* GTOID.m in Sources */,
+				D01B6F4419F82F8700D411BC /* GTReference.m in Sources */,
+				D01B6F5619F82FA600D411BC /* GTReflog.m in Sources */,
+				D01B6F5819F82FA600D411BC /* GTReflogEntry.m in Sources */,
+				D01B6F4E19F82F8700D411BC /* GTRemote.m in Sources */,
+				D01B6F2019F82F8700D411BC /* GTRepository.m in Sources */,
+				D01B6F2219F82F8700D411BC /* GTRepository+Status.m in Sources */,
+				D01B6F2A19F82F8700D411BC /* GTRepository+Committing.m in Sources */,
+				D01B6F2419F82F8700D411BC /* GTRepository+Reset.m in Sources */,
+				D01B6F5019F82FA600D411BC /* GTRepository+Blame.m in Sources */,
+				D01B6F6619F82FA600D411BC /* GTRepository+Attributes.m in Sources */,
+				88B2131F1B20E785005CF2C5 /* GTRepository+References.m in Sources */,
+				D01B6F2C19F82F8700D411BC /* GTRepository+RemoteOperations.m in Sources */,
+				D01B6F2819F82F8700D411BC /* GTRepository+Stashing.m in Sources */,
+				D01B6F3419F82F8700D411BC /* GTSignature.m in Sources */,
+				D01B6F2619F82F8700D411BC /* GTStatusDelta.m in Sources */,
+				D01B6F5C19F82FA600D411BC /* GTSubmodule.m in Sources */,
+				D01B6F3E19F82F8700D411BC /* GTTag.m in Sources */,
+				D01B6F3A19F82F8700D411BC /* GTTreeEntry.m in Sources */,
+				D01B6F3819F82F8700D411BC /* GTTree.m in Sources */,
+				D01B6F3C19F82F8700D411BC /* GTTreeBuilder.m in Sources */,
+				D019778A19F8307600F523DA /* ObjectiveGit.m in Sources */,
+				D01B6F1E19F82F7B00D411BC /* NSArray+StringArray.m in Sources */,
 				D01B6F1C19F82F7B00D411BC /* NSDate+GTTimeAdditions.m in Sources */,
 				D01B6F1619F82F7B00D411BC /* NSData+Git.m in Sources */,
-				D01B6F1E19F82F7B00D411BC /* NSArray+StringArray.m in Sources */,
-				D01B6F5819F82FA600D411BC /* GTReflogEntry.m in Sources */,
-				D01B6F4A19F82F8700D411BC /* GTOdbObject.m in Sources */,
+				D01B6F1819F82F7B00D411BC /* NSError+Git.m in Sources */,
+				D01B6F1A19F82F7B00D411BC /* NSString+Git.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1800,22 +1811,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"External/libssh2-ios/include/libssh2",
-					External/libgit2/include,
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"External/ios-openssl/lib",
-					"External/libssh2-ios/lib",
-					"External/libgit2-ios",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
-				OTHER_LDFLAGS = (
-					"-lgit2-ios",
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ObjectiveGit;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1864,22 +1864,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"External/libssh2-ios/include/libssh2",
-					External/libgit2/include,
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"External/ios-openssl/lib",
-					"External/libssh2-ios/lib",
-					"External/libgit2-ios",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
-				OTHER_LDFLAGS = (
-					"-lgit2-ios",
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ObjectiveGit;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1896,22 +1885,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"External/libssh2-ios/include/libssh2",
-					External/libgit2/include,
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"External/ios-openssl/lib",
-					"External/libssh2-ios/lib",
-					"External/libgit2-ios",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
-				OTHER_LDFLAGS = (
-					"-lgit2-ios",
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ObjectiveGit;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1928,22 +1906,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"External/libssh2-ios/include/libssh2",
-					External/libgit2/include,
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"External/ios-openssl/lib",
-					"External/libssh2-ios/lib",
-					"External/libgit2-ios",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
-				OTHER_LDFLAGS = (
-					"-lgit2-ios",
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ObjectiveGit;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2105,12 +2072,29 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/include,
+					"External/libssh2-ios/include/libssh2",
+					External/libgit2/include,
+				);
 				INFOPLIST_FILE = git2/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"External/libgit2-ios",
+					"External/libssh2-ios/lib",
+					"External/ios-openssl/lib",
+					"$(PROJECT_DIR)/External/libssh2-ios/lib",
+				);
 				MODULEMAP_FILE = git2/git2.modulemap;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lgit2-ios",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.git2;
 				PRODUCT_NAME = git2;
 				SDKROOT = iphoneos;
@@ -2154,12 +2138,29 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/include,
+					"External/libssh2-ios/include/libssh2",
+					External/libgit2/include,
+				);
 				INFOPLIST_FILE = git2/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"External/libgit2-ios",
+					"External/libssh2-ios/lib",
+					"External/ios-openssl/lib",
+					"$(PROJECT_DIR)/External/libssh2-ios/lib",
+				);
 				MODULEMAP_FILE = git2/git2.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lgit2-ios",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.git2;
 				PRODUCT_NAME = git2;
 				SDKROOT = iphoneos;
@@ -2204,12 +2205,29 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/include,
+					"External/libssh2-ios/include/libssh2",
+					External/libgit2/include,
+				);
 				INFOPLIST_FILE = git2/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"External/libgit2-ios",
+					"External/libssh2-ios/lib",
+					"External/ios-openssl/lib",
+					"$(PROJECT_DIR)/External/libssh2-ios/lib",
+				);
 				MODULEMAP_FILE = git2/git2.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lgit2-ios",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.git2;
 				PRODUCT_NAME = git2;
 				SDKROOT = iphoneos;
@@ -2254,12 +2272,29 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/include,
+					"External/libssh2-ios/include/libssh2",
+					External/libgit2/include,
+				);
 				INFOPLIST_FILE = git2/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"External/libgit2-ios",
+					"External/libssh2-ios/lib",
+					"External/ios-openssl/lib",
+					"$(PROJECT_DIR)/External/libssh2-ios/lib",
+				);
 				MODULEMAP_FILE = git2/git2.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lgit2-ios",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.git2;
 				PRODUCT_NAME = git2;
 				SDKROOT = iphoneos;
@@ -2370,6 +2405,7 @@
 				F8550CD01B647CFB00716FFA /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
