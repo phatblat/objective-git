@@ -73,6 +73,10 @@ FOUNDATION_EXPORT const unsigned char git2VersionString[];
 
 // Other headers
 #import <git2/cred_helpers.h>
+#import <git2/oidarray.h>
+#import <git2/strarray.h>
+#import <git2/trace.h>
+
 #import <git2/sys/commit.h>
 #import <git2/sys/config.h>
 #import <git2/sys/diff.h>
@@ -88,7 +92,6 @@ FOUNDATION_EXPORT const unsigned char git2VersionString[];
 #import <git2/sys/repository.h>
 #import <git2/sys/stream.h>
 #import <git2/sys/transport.h>
-#import <git2/trace.h>
 
 // Microsoft platforms
 //#import <git2/inttypes.h>
