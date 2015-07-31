@@ -1617,10 +1617,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-DGIT_SSH",
-				);
+				OTHER_CFLAGS = "$(inherited)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = (
 					"$(inherited)",
@@ -1646,10 +1643,7 @@
 					External,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-DGIT_SSH",
-				);
+				OTHER_CFLAGS = "$(inherited)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = (
 					"$(inherited)",
@@ -1751,10 +1745,7 @@
 					External,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-DGIT_SSH",
-				);
+				OTHER_CFLAGS = "$(inherited)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = (
 					"$(inherited)",
@@ -1934,10 +1925,7 @@
 					External,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-DGIT_SSH",
-				);
+				OTHER_CFLAGS = "$(inherited)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = (
 					"$(inherited)",
