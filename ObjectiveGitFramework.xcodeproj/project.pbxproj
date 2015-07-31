@@ -312,6 +312,11 @@
 		F83062661B69D8AF000C93CE /* git2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8550CC71B647CFB00716FFA /* git2.framework */; };
 		F83062681B69E1C5000C93CE /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83062671B69E1C5000C93CE /* CoreFoundation.framework */; };
 		F830626A1B69E2F6000C93CE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83062691B69E2F6000C93CE /* Security.framework */; };
+		F830626C1B6B1829000C93CE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 884C8A3619FF4B4D0017E98D /* libz.dylib */; };
+		F830626D1B6B1844000C93CE /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 884C8A3819FF4B6D0017E98D /* libiconv.dylib */; };
+		F830626E1B6B1865000C93CE /* libssh2-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A502B8617D6892D00BAF4A5 /* libssh2-ios.a */; };
+		F830626F1B6B1884000C93CE /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F2FD417C6A8F3003DFADE /* libssl.a */; };
+		F83062701B6B1886000C93CE /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F2FD317C6A8F3003DFADE /* libcrypto.a */; };
 		F8550CE11B654C7100716FFA /* git2.h in Headers */ = {isa = PBXBuildFile; fileRef = F8550CC91B647CFB00716FFA /* git2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F879D8311B4B788F002D5C07 /* Libgit2FeaturesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F879D82F1B4B77F4002D5C07 /* Libgit2FeaturesSpec.m */; };
 		F8E4A2911A170CA6006485A8 /* GTRemotePushSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E4A2901A170CA6006485A8 /* GTRemotePushSpec.m */; };
@@ -620,6 +625,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F83062661B69D8AF000C93CE /* git2.framework in Frameworks */,
+				F830626C1B6B1829000C93CE /* libz.dylib in Frameworks */,
+				F830626D1B6B1844000C93CE /* libiconv.dylib in Frameworks */,
+				F830626E1B6B1865000C93CE /* libssh2-ios.a in Frameworks */,
+				F83062701B6B1886000C93CE /* libcrypto.a in Frameworks */,
+				F830626F1B6B1884000C93CE /* libssl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1804,7 +1814,10 @@
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/External/libssh2-ios/lib",
+					"$(PROJECT_DIR)/External/ios-openssl/lib",
+				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ObjectiveGit;
@@ -1857,7 +1870,10 @@
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/External/libssh2-ios/lib",
+					"$(PROJECT_DIR)/External/ios-openssl/lib",
+				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ObjectiveGit;
@@ -1878,7 +1894,10 @@
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/External/libssh2-ios/lib",
+					"$(PROJECT_DIR)/External/ios-openssl/lib",
+				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ObjectiveGit;
@@ -1899,7 +1918,10 @@
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/External/libssh2-ios/lib",
+					"$(PROJECT_DIR)/External/ios-openssl/lib",
+				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ObjectiveGit;
