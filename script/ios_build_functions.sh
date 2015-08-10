@@ -11,15 +11,15 @@ function setup_build_environment ()
     PATH="/usr/local/bin:/opt/boxen/homebrew/bin:$PATH"
     
     pushd "$SCRIPT_DIR/.." > /dev/null
-    ROOT_PATH="$PWD"
+    export ROOT_PATH="$PWD"
     popd > /dev/null
 
     CLANG="/usr/bin/xcrun clang"
-    CC="${CLANG}"
-    CPP="${CLANG} -E"
+    export CC="${CLANG}"
+    export CPP="${CLANG} -E"
 
     # We need to clear this so that cmake doesn't have a conniption
-    MACOSX_DEPLOYMENT_TARGET=""
+    export MACOSX_DEPLOYMENT_TARGET=""
 
     XCODE_MAJOR_VERSION=$(xcode_major_version)
     
@@ -57,7 +57,7 @@ function build_all_archs ()
     local finish_build=$3
 
     # run the prepare function
-    eval $setup
+    eval "$setup"
 
     echo "Building for ${ARCHS}"
 
