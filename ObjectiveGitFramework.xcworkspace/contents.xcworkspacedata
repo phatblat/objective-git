@@ -5,6 +5,9 @@
       location = "group:ObjectiveGitFramework.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Carthage/Checkouts/Git2/git2.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Carthage/Checkouts/Nimble/Nimble.xcodeproj">
    </FileRef>
    <FileRef
