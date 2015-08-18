@@ -8,4 +8,5 @@
 	path = Carthage/Checkouts/xcconfigs
 	url = https://github.com/jspahrsummers/xcconfigs.git
 [submodule "Carthage/Checkouts/Git2"]
+	path = Carthage/Checkouts/Git2
 	url = https://github.com/phatblat/Git2.git
