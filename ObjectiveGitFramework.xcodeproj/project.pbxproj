@@ -254,6 +254,8 @@
 		DD3D951C182AB25C004AF532 /* GTBlameHunk.h in Headers */ = {isa = PBXBuildFile; fileRef = DD3D951A182AB25C004AF532 /* GTBlameHunk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD3D951D182AB25C004AF532 /* GTBlameHunk.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3D951B182AB25C004AF532 /* GTBlameHunk.m */; };
 		F879D8311B4B788F002D5C07 /* Libgit2FeaturesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F879D82F1B4B77F4002D5C07 /* Libgit2FeaturesSpec.m */; };
+		F8E3B74B1B86D6CD0089F413 /* git2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E3B74A1B86D6CD0089F413 /* git2.framework */; };
+		F8E3B74D1B86D6DD0089F413 /* git2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E3B74C1B86D6DD0089F413 /* git2.framework */; };
 		F8E4A2911A170CA6006485A8 /* GTRemotePushSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E4A2901A170CA6006485A8 /* GTRemotePushSpec.m */; };
 /* End PBXBuildFile section */
 
@@ -457,6 +459,8 @@
 		E46931A7172740D300F2077D /* update_libgit2 */ = {isa = PBXFileReference; lastKnownFileType = text; name = update_libgit2; path = script/update_libgit2; sourceTree = "<group>"; };
 		E46931A8172740D300F2077D /* update_libgit2_ios */ = {isa = PBXFileReference; lastKnownFileType = text; name = update_libgit2_ios; path = script/update_libgit2_ios; sourceTree = "<group>"; };
 		F879D82F1B4B77F4002D5C07 /* Libgit2FeaturesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Libgit2FeaturesSpec.m; sourceTree = "<group>"; };
+		F8E3B74A1B86D6CD0089F413 /* git2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = git2.framework; path = "../Git2/build/Debug-iphoneos/git2.framework"; sourceTree = "<group>"; };
+		F8E3B74C1B86D6DD0089F413 /* git2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = git2.framework; path = ../Git2/build/Debug/git2.framework; sourceTree = "<group>"; };
 		F8E4A2901A170CA6006485A8 /* GTRemotePushSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTRemotePushSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -476,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+				F8E3B74D1B86D6DD0089F413 /* git2.framework in Frameworks */,
 				4D103ADD1819CFAA0029DB24 /* libiconv.dylib in Frameworks */,
 				8803DA871313145700E6E818 /* libz.dylib in Frameworks */,
 			);
@@ -485,6 +490,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E3B74B1B86D6CD0089F413 /* git2.framework in Frameworks */,
 				884C8A3919FF4B6D0017E98D /* libiconv.dylib in Frameworks */,
 				884C8A3719FF4B4D0017E98D /* libz.dylib in Frameworks */,
 			);
@@ -506,6 +512,8 @@
 		0867D691FE84028FC02AAC07 /* ObjectiveGitFramework */ = {
 			isa = PBXGroup;
 			children = (
+				F8E3B74C1B86D6DD0089F413 /* git2.framework */,
+				F8E3B74A1B86D6CD0089F413 /* git2.framework */,
 				BDD8AB01130F01AB00CB5D40 /* README.md */,
 				887B948D1A3A38130070D41D /* ObjectiveGit.modulemap */,
 				BDE4C05E130EFE2C00851650 /* ObjectiveGit */,
