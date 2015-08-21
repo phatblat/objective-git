@@ -512,8 +512,6 @@
 		0867D691FE84028FC02AAC07 /* ObjectiveGitFramework */ = {
 			isa = PBXGroup;
 			children = (
-				F8E3B74C1B86D6DD0089F413 /* git2.framework */,
-				F8E3B74A1B86D6CD0089F413 /* git2.framework */,
 				BDD8AB01130F01AB00CB5D40 /* README.md */,
 				887B948D1A3A38130070D41D /* ObjectiveGit.modulemap */,
 				BDE4C05E130EFE2C00851650 /* ObjectiveGit */,
@@ -533,6 +531,8 @@
 			isa = PBXGroup;
 			children = (
 				306123A817EA5261006591D4 /* extobjc */,
+				F8E3B74C1B86D6DD0089F413 /* git2.framework */,
+				F8E3B74A1B86D6CD0089F413 /* git2.framework */,
 				4D103ADC1819CFAA0029DB24 /* libiconv.dylib */,
 				8803DA861313145700E6E818 /* libz.dylib */,
 				884C8A3619FF4B4D0017E98D /* libz.dylib */,
