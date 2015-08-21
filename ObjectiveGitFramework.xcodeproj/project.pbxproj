@@ -1019,7 +1019,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastTestingUpgradeCheck = 0510;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "GitHub, Inc";
 				TargetAttributes = {
 					D01B6ED219F82E2000D411BC = {
@@ -1262,6 +1262,7 @@
 				INFOPLIST_FILE = Info.plist;
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ObjectiveGit;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1278,6 +1279,7 @@
 				INFOPLIST_FILE = Info.plist;
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ObjectiveGit;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1288,6 +1290,7 @@
 			baseConfigurationReference = D0A463D817E57C45000F5021 /* Debug.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = NO;
 				HEADER_SEARCH_PATHS = "";
@@ -1340,6 +1343,7 @@
 				);
 				INFOPLIST_FILE = "ObjectiveGitTests/ObjectiveGitTests-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.libgit2.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1354,6 +1358,7 @@
 				);
 				INFOPLIST_FILE = "ObjectiveGitTests/ObjectiveGitTests-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.libgit2.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1392,6 +1397,7 @@
 				INFOPLIST_FILE = Info.plist;
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ObjectiveGit;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1407,6 +1413,7 @@
 				);
 				INFOPLIST_FILE = "ObjectiveGitTests/ObjectiveGitTests-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.libgit2.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Test;
@@ -1426,6 +1433,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ObjectiveGit;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1447,6 +1455,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ObjectiveGit;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1468,6 +1477,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ObjectiveGit;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1489,6 +1499,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ObjectiveGit;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1529,6 +1540,7 @@
 				INFOPLIST_FILE = Info.plist;
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ObjectiveGit;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1544,6 +1556,7 @@
 				);
 				INFOPLIST_FILE = "ObjectiveGitTests/ObjectiveGitTests-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.libgit2.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Profile;
