@@ -45,6 +45,7 @@ function build_libgit2 ()
     cmake \
         -DCMAKE_C_COMPILER_WORKS:BOOL=ON \
         -DBUILD_SHARED_LIBS:BOOL=OFF \
+        -DCMAKE_C_FLAGS:STRING="-dynamic" \
         -DCMAKE_LIBRARY_PATH:PATH=../../External/libssh2-ios/lib/ \
         -DLIBSSH2_INCLUDE_DIRS:PATH=../../External/libssh2-ios/include/libssh2/ \
         -DCMAKE_LIBRARY_PATH:PATH="${SDKROOT}/usr/lib/" \
