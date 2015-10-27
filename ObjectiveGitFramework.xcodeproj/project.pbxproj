@@ -70,7 +70,6 @@
 		886E622A18AEBF75000611A0 /* GTFilterSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 886E622818AEBF75000611A0 /* GTFilterSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		886E622C18AEBF75000611A0 /* GTFilterSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 886E622918AEBF75000611A0 /* GTFilterSource.m */; };
 		886E623718AECD86000611A0 /* GTFilterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 886E623618AECD86000611A0 /* GTFilterSpec.m */; };
-		8870390B1975E3F2004118D7 /* GTDiffDeltaSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8870390A1975E3F2004118D7 /* GTDiffDeltaSpec.m */; };
 		88746CC417FA1C950005888A /* GTRepository+Committing.h in Headers */ = {isa = PBXBuildFile; fileRef = 88746CC217FA1C950005888A /* GTRepository+Committing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88746CC617FA1C950005888A /* GTRepository+Committing.m in Sources */ = {isa = PBXBuildFile; fileRef = 88746CC317FA1C950005888A /* GTRepository+Committing.m */; };
 		88948AC91779243600809CDA /* GTObjectDatabaseSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88948AC81779243600809CDA /* GTObjectDatabaseSpec.m */; };
@@ -253,6 +252,8 @@
 		DD3D9513182A81E1004AF532 /* GTBlame.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3D9511182A81E1004AF532 /* GTBlame.m */; };
 		DD3D951C182AB25C004AF532 /* GTBlameHunk.h in Headers */ = {isa = PBXBuildFile; fileRef = DD3D951A182AB25C004AF532 /* GTBlameHunk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD3D951D182AB25C004AF532 /* GTBlameHunk.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3D951B182AB25C004AF532 /* GTBlameHunk.m */; };
+		F81A24881BDF305D0040DD45 /* GTDiffDeltaSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8870390A1975E3F2004118D7 /* GTDiffDeltaSpec.m */; };
+		F81A24891BDF305E0040DD45 /* GTDiffDeltaSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8870390A1975E3F2004118D7 /* GTDiffDeltaSpec.m */; };
 		F879D8311B4B788F002D5C07 /* Libgit2FeaturesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F879D82F1B4B77F4002D5C07 /* Libgit2FeaturesSpec.m */; };
 		F879D8441B4B80C7002D5C07 /* Libgit2FeaturesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F879D82F1B4B77F4002D5C07 /* Libgit2FeaturesSpec.m */; };
 		F879D8481B4B83B9002D5C07 /* SwiftSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A0129619F9A660007F1914 /* SwiftSpec.swift */; };
@@ -292,7 +293,6 @@
 		F8D007A21B4FA03B009A8DAF /* GTFilterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 886E623618AECD86000611A0 /* GTFilterSpec.m */; };
 		F8D007A31B4FA03B009A8DAF /* GTFilterListSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D0751CD818BE520400134314 /* GTFilterListSpec.m */; };
 		F8D007A41B4FA03B009A8DAF /* GTRepositoryResetSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88234B2518F2FE260039972E /* GTRepositoryResetSpec.m */; };
-		F8D007A51B4FA03B009A8DAF /* GTDiffDeltaSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8870390A1975E3F2004118D7 /* GTDiffDeltaSpec.m */; };
 		F8D007A61B4FA03B009A8DAF /* GTRepositoryAttributesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E353051982EA6B0051001F /* GTRepositoryAttributesSpec.m */; };
 		F8D007A71B4FA040009A8DAF /* QuickSpec+GTFixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A994CA16FCED1D00402C7B /* QuickSpec+GTFixtures.m */; };
 		F8D007A81B4FA045009A8DAF /* fixtures.zip in Resources */ = {isa = PBXBuildFile; fileRef = D09C2E50175602A500065E36 /* fixtures.zip */; };
@@ -1208,7 +1208,7 @@
 				88A994CB16FCED1D00402C7B /* QuickSpec+GTFixtures.m in Sources */,
 				F8EFA03A1B4059ED000FF7D0 /* GTUtilityFunctions.m in Sources */,
 				30B1E8001703871900D0814D /* GTTimeAdditionsSpec.m in Sources */,
-				8870390B1975E3F2004118D7 /* GTDiffDeltaSpec.m in Sources */,
+				F81A24881BDF305D0040DD45 /* GTDiffDeltaSpec.m in Sources */,
 				88C0BC5917038CF3009E99AA /* GTConfigurationSpec.m in Sources */,
 				88215483171499BE00D76B76 /* GTReflogSpec.m in Sources */,
 				88948AC91779243600809CDA /* GTObjectDatabaseSpec.m in Sources */,
@@ -1363,6 +1363,7 @@
 				F8D007761B4F7D10009A8DAF /* GTTimeAdditionsSpec.m in Sources */,
 				F8D007921B4FA03B009A8DAF /* GTIndexSpec.m in Sources */,
 				F8D007711B4F7CB0009A8DAF /* NSDataGitSpec.m in Sources */,
+				F81A24891BDF305E0040DD45 /* GTDiffDeltaSpec.m in Sources */,
 				F8D007A11B4FA03B009A8DAF /* GTRepositoryStashingSpec.m in Sources */,
 				F8D007A31B4FA03B009A8DAF /* GTFilterListSpec.m in Sources */,
 				F8D0079D1B4FA03B009A8DAF /* GTTreeBuilderSpec.m in Sources */,
@@ -1392,7 +1393,6 @@
 				F8D0079E1B4FA03B009A8DAF /* GTTreeSpec.m in Sources */,
 				F8D007A01B4FA03B009A8DAF /* GTRepository+StatusSpec.m in Sources */,
 				F8D007961B4FA03B009A8DAF /* GTRemotePushSpec.m in Sources */,
-				F8D007A51B4FA03B009A8DAF /* GTDiffDeltaSpec.m in Sources */,
 				F879D8481B4B83B9002D5C07 /* SwiftSpec.swift in Sources */,
 				F8D007811B4F9758009A8DAF /* SSZipArchive.m in Sources */,
 				F8D007861B4F97F9009A8DAF /* ioapi.c in Sources */,
@@ -1780,6 +1780,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.libgit2.${PRODUCT_NAME:rfc1034identifier}";
 			};
 			name = Profile;
 		};
