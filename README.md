@@ -26,7 +26,7 @@ The ObjectiveGit API makes extensive use of the Cocoa NSError pattern. The publi
 
 ### Xcode
 
-ObjectiveGit requires Xcode 6.3 or greater to build the framework and run unit tests. Projects that must use an older version of Xcode can use 
+ObjectiveGit requires Xcode 7 or greater to build the framework and run unit tests. Projects that must use an older version of Xcode can use 
 [Carthage](#carthage) to install pre-built binaries
 or download them [manually](#manually).
 
@@ -66,7 +66,7 @@ There are three ways of including ObjectiveGit in a project:
 1. **Mac targets**
   * On your application targets' "General" settings tab, in the "Embedded Binaries" section, drag and drop the `ObjectiveGit.framework` from the [`Carthage/Build/Mac`](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#carthagebuild) folder on disk.
 
-  ![Embedded Binaries](http://imgur.com/W9EVyIX.png)
+  ![Embedded Binaries](http://i.imgur.com/W9EVyIX.png)
 
 1. **iOS targets**
   * On your application targets' "General" settings tab, in the "Linked Frameworks and Libraries" section, drag and drop the `ObjectiveGit.framework` from the [`Carthage/Build/iOS`](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#carthagebuild) folder on disk.
@@ -144,10 +144,10 @@ Note that the iOS framework we release is a "fat" framework containing slices fo
 1. Send a pull request
 
 All contributions should match GitHub's [Objective-C coding
-conventions](https://github.com/github/objective-c-conventions).
+conventions](https://github.com/github/objective-c-style-guide).
 
 You can see all the amazing people that have contributed to this project
-[here](https://github.com/libgit2/objective-git/contributors).
+[here](https://github.com/libgit2/objective-git/graphs/contributors).
 
 
 ## License
