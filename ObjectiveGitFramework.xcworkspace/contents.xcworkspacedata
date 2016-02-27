@@ -14,6 +14,6 @@
       location = "group:Carthage/Checkouts/Quick/Quick.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Carthage/Checkouts/ZipArchive/SSZipArchive.xcodeproj">
+      location = "group:Carthage/Checkouts/ZipArchive/ZipArchive.xcodeproj">
    </FileRef>
 </Workspace>

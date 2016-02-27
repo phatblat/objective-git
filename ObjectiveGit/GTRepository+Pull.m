@@ -17,7 +17,10 @@
 #import "GTRepository+RemoteOperations.h"
 #import "GTTree.h"
 #import "NSError+Git.h"
+#import "GTIndexEntry.h"
 #import "git2/errors.h"
+
+NSString * const GTPullMergeConflictedFiles = @"GTPullMergeConflictedFiles";
 
 @implementation GTRepository (Pull)
 
@@ -106,7 +109,14 @@
 
 		// Check for conflict
 		if (index.hasConflicts) {
-			if (error != NULL) *error = [NSError git_errorFor:GIT_ECONFLICT description:@"Merge conflict, pull aborted"];
+			NSMutableArray <NSString *>*files = [NSMutableArray array];
+			[index enumerateConflictedFilesWithError:error usingBlock:^(GTIndexEntry * _Nonnull ancestor, GTIndexEntry * _Nonnull ours, GTIndexEntry * _Nonnull theirs, BOOL * _Nonnull stop) {
+				[files addObject:ours.path];
+			}];
+			if (error != NULL) {
+				NSDictionary *userInfo = @{GTPullMergeConflictedFiles: files};
+				*error = [NSError git_errorFor:GIT_ECONFLICT description:@"Merge conflict, Pull aborted." userInfo:userInfo failureReason:nil];
+			}
 			return NO;
 		}
 
