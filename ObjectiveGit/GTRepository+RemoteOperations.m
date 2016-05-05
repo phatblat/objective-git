@@ -23,6 +23,8 @@
 #import "git2/remote.h"
 
 NSString *const GTRepositoryRemoteOptionsCredentialProvider = @"GTRepositoryRemoteOptionsCredentialProvider";
+NSString *const GTRepositoryRemoteOptionsFetchPrune = @"GTRepositoryRemoteOptionsFetchPrune";
+NSString *const GTRepositoryRemoteOptionsDownloadTags = @"GTRepositoryRemoteOptionsDownloadTags";
 
 typedef void (^GTRemoteFetchTransferProgressBlock)(const git_transfer_progress *stats, BOOL *stop);
 typedef void (^GTRemotePushTransferProgressBlock)(unsigned int current, unsigned int total, size_t bytes, BOOL *stop);
@@ -80,6 +82,8 @@ int GTRemotePushTransferProgressCallback(unsigned int current, unsigned int tota
 
 	git_fetch_options fetchOptions = GIT_FETCH_OPTIONS_INIT;
 	fetchOptions.callbacks = remote_callbacks;
+	fetchOptions.prune = [options[GTRepositoryRemoteOptionsFetchPrune] unsignedIntValue];
+	fetchOptions.download_tags = [options[GTRepositoryRemoteOptionsDownloadTags] unsignedIntValue];
 
 	__block git_strarray refspecs;
 	int gitError = git_remote_get_fetch_refspecs(&refspecs, remote.git_remote);
@@ -222,7 +226,7 @@ int GTFetchHeadEntriesCallback(const char *ref_name, const char *remote_url, con
 	remote_callbacks.push_transfer_progress = GTRemotePushTransferProgressCallback;
 	remote_callbacks.payload = &connectionInfo,
 
-	gitError = git_remote_connect(remote.git_remote, GIT_DIRECTION_PUSH, &remote_callbacks);
+	gitError = git_remote_connect(remote.git_remote, GIT_DIRECTION_PUSH, &remote_callbacks, NULL);
 	if (gitError != GIT_OK) {
 		if (error != NULL) *error = [NSError git_errorFor:gitError description:@"Failed to connect remote"];
 		return NO;
