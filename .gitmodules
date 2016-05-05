@@ -1,6 +1,7 @@
 [submodule "libgit2"]
 	path = External/libgit2
-	url = https://github.com/libgit2/libgit2.git
+	url = https://github.com/phatblat/libgit2.git
+	branch = ldg/octopad
 [submodule "openssl"]
 	path = External/openssl
 	url = https://github.com/openssl/openssl.git
